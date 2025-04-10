@@ -17,7 +17,7 @@ const CodeReviewEditor = () => {
     setReview("");
 
     try {
-      const response = await axios.post("/ai/get-review", { prompt: code });
+      const response = await axios.post("https://code-reviewer-backend-fryq.onrender.com/ai/get-review", { prompt: code });
 
       if (response.data.success) {
         setReview(response.data.message);

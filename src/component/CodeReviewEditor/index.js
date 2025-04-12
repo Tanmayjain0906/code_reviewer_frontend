@@ -5,7 +5,7 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 import remarkGfm from "remark-gfm";
 import axios from "axios";
-import "./style.css"; // Your CSS stays untouched
+import "./style.css"; 
 
 const CodeReviewEditor = () => {
   const [code, setCode] = useState("");
